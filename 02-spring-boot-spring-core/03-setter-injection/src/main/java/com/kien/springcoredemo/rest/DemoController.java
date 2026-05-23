@@ -1,6 +1,6 @@
 package com.kien.springcoredemo.rest;
 
-import com.kien.util.Coach;
+import com.kien.springcoredemo.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,7 +13,7 @@ public class DemoController {
 
     // define a constructor that injects the Coach object (dependency injection)
     @Autowired
-    DemoController(Coach theCoach) {
+    public void setCoach(Coach theCoach){ // Setter Injection
         myCoach = theCoach;
     }
 

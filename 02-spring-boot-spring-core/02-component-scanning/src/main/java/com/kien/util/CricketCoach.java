@@ -1,4 +1,4 @@
-package com.kien.springcoredemo.common;
+package com.kien.util;
 
 import org.springframework.stereotype.Component;
 
